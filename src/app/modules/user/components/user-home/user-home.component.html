@@ -1,0 +1,95 @@
+<div class="header">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <span>Digibasta</span>
+      <mat-nav-list style="display: flex">
+        <button mat-button [matMenuTriggerFor]="categoriesMenu">Categories
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+      </mat-nav-list>
+
+      <!-- categories menu -->
+
+      <mat-menu #categoriesMenu="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="classOneMenu">NCERT Class 1</button>
+        <button mat-menu-item [matMenuTriggerFor]="classTwoMenu">NCERT Class 2</button>
+        <button mat-menu-item [matMenuTriggerFor]="classThreeMenu">NCERT Class 3</button>
+        <button mat-menu-item [matMenuTriggerFor]="classFourMenu">NCERT Class 4</button>
+        <button mat-menu-item [matMenuTriggerFor]="classFiveMenu">NCERT Class 5</button>
+      </mat-menu>
+
+      <!-- class one menu -->
+
+      <mat-menu #classOneMenu="matMenu">
+        <button mat-menu-item>Hindi</button>
+        <button mat-menu-item>English</button>
+        <button mat-menu-item>Mathematics</button>
+      </mat-menu>
+
+      <!-- class Two menu -->
+
+      <mat-menu #classTwoMenu="matMenu">
+        <button mat-menu-item>Hindi</button>
+        <button mat-menu-item>English</button>
+        <button mat-menu-item>Mathematics</button>
+      </mat-menu>
+
+      <!-- class Three menu -->
+
+      <mat-menu #classThreeMenu="matMenu">
+        <button mat-menu-item>Hindi</button>
+        <button mat-menu-item>English</button>
+        <button mat-menu-item>Mathematics</button>
+        <button mat-menu-item>Environmental Science</button>
+      </mat-menu>
+
+      <!-- class Four menu -->
+
+      <mat-menu #classFourMenu="matMenu">
+        <button mat-menu-item>Hindi</button>
+        <button mat-menu-item>English</button>
+        <button mat-menu-item>Mathematics</button>
+        <button mat-menu-item>Environmental Science</button>
+      </mat-menu>
+
+      <!-- class Five menu -->
+
+      <mat-menu #classFiveMenu="matMenu">
+        <button mat-menu-item>Hindi</button>
+        <button mat-menu-item>English</button>
+        <button mat-menu-item>Mathematics</button>
+        <button mat-menu-item>Environmental Science</button>
+      </mat-menu>
+
+      <span class="example-spacer"></span>
+      <mat-nav-list style="display: flex">
+        <button mat-button>Courses</button>
+        <button mat-button>Services</button>
+        <button mat-button>Blogs</button>
+        <button mat-button>Profile</button>
+        <button mat-raised-button routerLink='signIn' class="signIn_btn">Sign In</button>
+        <button mat-raised-button routerLink='signUp'>Sign Up</button>
+      </mat-nav-list>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+
+<div style="padding-top: 64px;">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 pt-5" *ngFor="let content of contents">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../../../assets/bg/home-card.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
