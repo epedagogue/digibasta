@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SharedModule } from './modules/shared-module'
@@ -14,6 +16,8 @@ import { CoursesComponent } from './components/admin/courses/courses.component';
 import { CustomerComponent } from './components/admin/customer/customer.component';
 import { DiscountComponent } from './components/admin/discount/discount.component';
 import { OrderComponent } from './components/admin/order/order.component';
+import { ProfileComponent } from './components/user/profile/profile.component';
+import { CartComponent } from './components/user/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,8 @@ import { OrderComponent } from './components/admin/order/order.component';
     CustomerComponent,
     DiscountComponent,
     OrderComponent,
+    ProfileComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,8 @@ import { OrderComponent } from './components/admin/order/order.component';
     BrowserAnimationsModule,
     SharedModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

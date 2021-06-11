@@ -63,12 +63,13 @@
 
       <span class="example-spacer"></span>
       <mat-nav-list style="display: flex">
-        <button mat-button>Courses</button>
+        <button mat-button>My Learning</button>
         <button mat-button>Services</button>
         <button mat-button>Blogs</button>
-        <button mat-button>Profile</button>
+        <button mat-button routerLink='profile'>Profile</button>
         <button mat-raised-button routerLink='signIn' class="signIn_btn">Sign In</button>
-        <button mat-raised-button routerLink='signUp'>Sign Up</button>
+        <button mat-raised-button routerLink='signUp' class="signIn_btn">Sign Up</button>
+        <button mat-button class="cart" routerLink='cart'><mat-icon matBadge="15" matBadgeColor="warn">local_mall</mat-icon></button>      
       </mat-nav-list>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -78,7 +79,7 @@
   <router-outlet></router-outlet>
 </div>
 
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-4 pt-5" *ngFor="let content of contents">
       <div class="card" style="width: 18rem;">
@@ -92,4 +93,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
