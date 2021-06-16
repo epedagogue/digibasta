@@ -6,15 +6,18 @@ import { SignInComponent } from 'src/app/components/sign-in/sign-in.component';
 import { SignUpComponent } from 'src/app/components/sign-up/sign-up.component';
 import { ProfileComponent } from 'src/app/components/user/profile/profile.component';
 import { CartComponent } from 'src/app/components/user/cart/cart.component';
+import { CoursesDetailsComponent } from 'src/app/components/user/courses-details/courses-details.component';
+import { CoursesComponent } from 'src/app/components/user/courses/courses.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'user',
     component: UserHomeComponent,
     children: [
-      { path: 'user-home', component: UserHomeComponent },
+      { path: '', component: CoursesComponent },
       { path: 'profile', component: ProfileComponent },
-      { path: 'cart', component: CartComponent }
+      { path: 'cart', component: CartComponent },
+      { path: 'course-detail', component: CoursesDetailsComponent }
     ]
   },
   { path: 'signIn', component: SignInComponent },

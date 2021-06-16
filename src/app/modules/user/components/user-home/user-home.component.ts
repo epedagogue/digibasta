@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserHomeComponent implements OnInit {
 
-  contents: string[] = ['Java', 'Angular', 'Python', 'Vue', 'React', 'c', 'C++'];
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4 pt-5" *ngFor="let content of contents">
+      <div class="card" style="width: 18rem;">
+        <img src="../../../../../assets/bg/ecom.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{content.courseName}}</h5>
+          <p class="card-text">{{content.content}}</p>
+          <a class="btn btn-primary" routerLink='course-detail'>Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

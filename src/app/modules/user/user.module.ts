@@ -4,15 +4,17 @@ import { UserRoutingModule } from './user-routing.module';
 import { SharedModule } from '../shared-module';
 
 import { UserHomeComponent } from './components/user-home/user-home.component';
-
-
+import { CoursesComponent } from '../../components/user/courses/courses.component'
 
 @NgModule({
-  declarations: [UserHomeComponent],
+  declarations: [
+    UserHomeComponent,
+    CoursesComponent
+  ],
   imports: [
     CommonModule,
     UserRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class UserModule { }

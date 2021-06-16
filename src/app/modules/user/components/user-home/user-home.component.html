@@ -1,7 +1,7 @@
 <div class="header">
   <mat-toolbar>
     <mat-toolbar-row>
-      <span>Digibasta</span>
+      <a><button mat-button routerLink="/user">Digibasta</button></a>
       <mat-nav-list style="display: flex">
         <button mat-button [matMenuTriggerFor]="categoriesMenu">Categories
           <mat-icon>arrow_drop_down</mat-icon>
@@ -69,28 +69,14 @@
         <button mat-button routerLink='profile'>Profile</button>
         <button mat-raised-button routerLink='signIn' class="signIn_btn">Sign In</button>
         <button mat-raised-button routerLink='signUp' class="signIn_btn">Sign Up</button>
-        <button mat-button class="cart" routerLink='cart'><mat-icon matBadge="15" matBadgeColor="warn">local_mall</mat-icon></button>      
+        <button mat-button class="cart" routerLink='cart'>
+          <mat-icon matBadge="15" matBadgeColor="warn">local_mall</mat-icon>
+        </button>
       </mat-nav-list>
     </mat-toolbar-row>
   </mat-toolbar>
 </div>
 
-<div style="padding-top: 64px;">
+<div style="padding-top: 50px;">
   <router-outlet></router-outlet>
 </div>
-
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-4 pt-5" *ngFor="let content of contents">
-      <div class="card" style="width: 18rem;">
-        <img src="../../../../../assets/bg/home-card.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
