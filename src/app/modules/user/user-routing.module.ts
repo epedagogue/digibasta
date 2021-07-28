@@ -22,22 +22,22 @@ const routes: Routes = [
     path: 'user',
     component: UserHomeComponent,
     children: [
-      {path: 'course', component: CoursesComponent },
-      {path: 'profile', component: ProfileComponent },
-      {path: 'cart', component: CartComponent },
-      {path: 'course-detail', component: CoursesDetailsComponent },
-      {path: 'signup', component: UserSignComponent},
-      {path: 'login', component: UserLoginComponent},
-      {path: 'header', component: HeaderComponent},
-      {path: 'checkout', component: CheckoutComponent},
-      {path: 'about-us', component:AboutusComponent},
-      {path: 'contact-us', component:ContactusComponent},
-      {path: 'teachers', component: TeachersComponent},
-      {path: 'teacher-details', component:TeacherDetailsComponent},
-      {path: 'home', component:HomeComponent}
+      { path: 'course', component: CoursesComponent },
+      { path: 'profile', component: ProfileComponent },
+      { path: 'cart', component: CartComponent },
+      { path: 'course-detail', component: CoursesDetailsComponent },
+      { path: 'signup', component: UserSignComponent },
+      { path: 'login', component: UserLoginComponent },
+      { path: 'header', component: HeaderComponent },
+      { path: 'checkout', component: CheckoutComponent },
+      { path: 'about-us', component: AboutusComponent },
+      { path: 'contact-us', component: ContactusComponent },
+      { path: 'teachers', component: TeachersComponent },
+      { path: 'teacher-details', component: TeacherDetailsComponent },
+      { path: 'home', component: HomeComponent }
     ]
   },
- 
+
 ];
 
 @NgModule({

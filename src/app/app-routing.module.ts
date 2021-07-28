@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { UserService } from './_services/user.service';
 
 
 const routes: Routes = [
-  {path: '',
-  loadChildren: () => import('./modules/user/user.module').then(m => m.UserModule)
+  { path: '', pathMatch: 'full', redirectTo: 'user/home' },
+  {
+    path: '',
+    loadChildren: () => import('./modules/user/user.module').then(m => m.UserModule)
   },
 
   {
