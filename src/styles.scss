@@ -747,40 +747,40 @@ ul#top_menu li a.btn_1:hover {
   background-color: rgba(57, 39, 121, 0.8);
 }
 #hero_in.courses:before {
-  background: url(http://via.placeholder.com/1600x1067/ccc/fff/bg_courses.jpg) center center no-repeat;
+  background: url(./assets/about-digibasta-2.png) center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 1390px 430px;
 }
 #hero_in.courses .wrapper {
-  background-color: #372675;
-  background-color: rgba(57, 39, 121, 0.8);
+  // background-color: #372675;
+  //  background-color: rgba(57, 39, 121, 0.8);
 }
 #hero_in.contacts:before {
-  background: url(http://via.placeholder.com/1600x1067/ccc/fff/bg_contacts.jpg) center center no-repeat;
+  background: url(./assets/contact-us-2.png)  center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 1400px 430px;
 }
 #hero_in.contacts .wrapper {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.8);
+  // background-color: black;
+  // background-color: rgba(0, 0, 0, 0.8);
 }
 #hero_in:before {
   animation: pop-in 5s 0.3s cubic-bezier(0, 0.5, 0, 1) forwards;
   content: "";
-  opacity: 0;
+  // opacity: -1;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
-  filter: gray;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  z-index: 0;
+  // filter: gray;
+  // -webkit-filter: grayscale(1);
+  // filter: grayscale(1);
 }
 #hero_in .wrapper {
   display: flex;
@@ -6677,16 +6677,18 @@ section.cart-section {
 
               section.teachers-section {
                 padding: 40px 0;
+                border-radius: 20px;
+                overflow: hidden;
                 background-color: #f8f9fa; }
                 section.teachers-section .profile-image {
-                  -webkit-border-radius: 4px;
-                  -moz-border-radius: 4px;
-                  -ms-border-radius: 4px;
-                  border-radius: 4px;
+                  -webkit-border-radius: 10px;
+                  -moz-border-radius: 10px;
+                  -ms-border-radius: 10px;
+                  border-radius: 10px;
                   margin-bottom: 40px;
                   overflow: hidden; }
                   section.teachers-section .profile-image .image-holder {
-                    max-height: 490px;
+                    max-height: 400px;
                     overflow: hidden; }
                     section.teachers-section .profile-image .image-holder img {
                       width: 100%;
@@ -6876,11 +6878,13 @@ section.cart-section {
                     background-color: rgba(0, 0, 0, 0.3); }
                 .teacher-post img {
                   width: 100%;
-                  height: auto;
-                  -webkit-border-radius: 4px;
-                  -moz-border-radius: 4px;
-                  -ms-border-radius: 4px;
-                  border-radius: 4px; }
+                  height: 250px;
+                  border-radius: 5px;
+                  overflow: hidden;
+                  -webkit-border-radius: 5px;
+                  -moz-border-radius: 5px;
+                  -ms-border-radius: 5px;
+                   }
                 .teacher-post .hover-post {
                   position: absolute;
                   left: 0;
@@ -6922,17 +6926,19 @@ section.cart-section {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   overflow: hidden;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+width: 250px;
+height: 300px; }
   .course-post:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
     -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
     -o-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06); }
   .course-post .course-thumbnail-holder img {
-    width: 100%;
-    height: auto; }
+    width: 126%;
+    height: 197px; }
   .course-post .course-content-main {
-    padding: 20px;
+    padding: 5px;
     overflow: hidden; }
     .course-post .course-content-main h2 a {
       color: #2f2f32; }
@@ -7016,7 +7022,7 @@ section.cart-section {
   right: 48px !important;
 }
 .videotestnonial{
-     background-image: url(./assets/basta.jpeg);
+     background-image: url(./assets/pattern_1.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

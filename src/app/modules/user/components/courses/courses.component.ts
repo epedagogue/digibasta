@@ -7,14 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesComponent implements OnInit {
 
-  contents: any =
+  courses: any =
     [
-      { 'id': 1, 'courseName': 'Science', 'content': 'This is my favorite book' },
-      { 'id': 1, 'courseName': 'Maths', 'content': 'This is my favorite book' },
-      { 'id': 1, 'courseName': 'English', 'content': 'This is my favorite book' },
-      { 'id': 1, 'courseName': 'EVS', 'content': 'This is my favorite book' },
-      { 'id': 1, 'courseName': 'Social Seience', 'content': 'This is my favorite book' },
-      { 'id': 1, 'courseName': 'Hindi', 'content': 'This is my favorite book' }
+      {  'courseName': 'Science', 'price': '2000'  },
+      {  'courseName': 'Maths', 'price': '2000' },
+      {  'courseName': 'English', 'price': '2000' },
+      {  'courseName': 'EVS', 'price': '2000' },
+      {  'courseName': 'Social Seience', 'price': '2000'  },
+      {  'courseName': 'Hindi', 'price': '2000' },
+      {  'courseName': 'newLangaugae', 'price': '3000' },
     ];
   constructor() { }
 

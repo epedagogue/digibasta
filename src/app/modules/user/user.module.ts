@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared-module';
 
@@ -18,9 +18,10 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { TeachersComponent } from './components/teachers/teachers.component';
 import { TeacherDetailsComponent } from './components/teacher-details/teacher-details.component'
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 import { HomeComponent } from './components/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MyLearningComponent } from './components/my-learning/my-learning.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     TeachersComponent,
     TeacherDetailsComponent,
     HomeComponent,
+    MyLearningComponent,
   ],
 
   imports: [

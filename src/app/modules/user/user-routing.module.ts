@@ -16,6 +16,7 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { TeacherDetailsComponent } from './components/teacher-details/teacher-details.component';
 import { TeachersComponent } from './components/teachers/teachers.component';
 import { HomeComponent } from './components/home/home.component';
+import {MyLearningComponent} from './components/my-learning/my-learning.component';
 
 const routes: Routes = [
   {
@@ -34,7 +35,8 @@ const routes: Routes = [
       {path: 'contact-us', component:ContactusComponent},
       {path: 'teachers', component: TeachersComponent},
       {path: 'teacher-details', component:TeacherDetailsComponent},
-      {path: 'home', component:HomeComponent}
+      {path: 'home', component:HomeComponent},
+      {path: 'learning', component:MyLearningComponent}
     ]
   },
  

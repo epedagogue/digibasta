@@ -331,19 +331,77 @@
              <ul>
                 <li><a routerLink="/user/home" class="active">Home</a></li>    
                 <li><a routerLink="/user/course">Courses</a></li>
-                <li><a href="portfolio.html">Study Material</a></li>
+                <!-- <li><a href="portfolio.html">Study Material</a></li> -->
+              <li> <a mat-button [matMenuTriggerFor]="categoriesMenu">Study Material
+                    <mat-icon>arrow_drop_down</mat-icon>
+              </a> </li> 
+               
+      
                 <li><a routerLink="/user/teachers">Instuctor</a></li>
-                <li><a href="blog.html">My Learning</a></li>
+                
                 <li><a routerLink="/user/contact-us">Contact Us</a></li>
                 <li><a routerLink="/user/about-us">About Us</a></li>
+                <li><a routerLink="/user/learning">My Learning</a></li>
             </ul>
             <span class="example-spacer"></span>
+            
             <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" routerLink="/user/cart" >
                 <mat-icon>shopping_cart</mat-icon>
             </button>
             <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="/user/profile">
                 <mat-icon>person</mat-icon>
             </button>
+
+            <mat-menu #categoriesMenu="matMenu">
+                <button mat-menu-item [matMenuTriggerFor]="classOneMenu">NCERT Class 1</button>
+                <button mat-menu-item [matMenuTriggerFor]="classTwoMenu">NCERT Class 2</button>
+                <button mat-menu-item [matMenuTriggerFor]="classThreeMenu">NCERT Class 3</button>
+                <button mat-menu-item [matMenuTriggerFor]="classFourMenu">NCERT Class 4</button>
+                <button mat-menu-item [matMenuTriggerFor]="classFiveMenu">NCERT Class 5</button>
+              </mat-menu> 
+  
+  <!-- class one menu -->
+  
+   <mat-menu #classOneMenu="matMenu">
+                <button mat-menu-item routerLink="/user/course">Hindi</button>
+                <button mat-menu-item>English</button>
+                <button mat-menu-item>Mathematics</button>
+              </mat-menu> 
+  
+  <!-- class Two menu -->
+  
+   <mat-menu #classTwoMenu="matMenu">
+                <button mat-menu-item>Hindi</button>
+                <button mat-menu-item>English</button>
+                <button mat-menu-item>Mathematics</button>
+              </mat-menu> 
+  
+  <!-- class Three menu -->
+  
+   <mat-menu #classThreeMenu="matMenu">
+                <button mat-menu-item>Hindi</button>
+                <button mat-menu-item>English</button>
+                <button mat-menu-item>Mathematics</button>
+                <button mat-menu-item>Environmental Science</button>
+              </mat-menu> 
+  
+  <!-- class Four menu -->
+  
+   <mat-menu #classFourMenu="matMenu">
+                <button mat-menu-item>Hindi</button>
+                <button mat-menu-item>English</button>
+                <button mat-menu-item>Mathematics</button>
+                <button mat-menu-item>Environmental Science</button>
+              </mat-menu> 
+  
+  <!-- class Five menu -->
+  
+   <mat-menu #classFiveMenu="matMenu">
+                <button mat-menu-item>Hindi</button>
+                <button mat-menu-item>English</button>
+                <button mat-menu-item>Mathematics</button>
+                <button mat-menu-item>Environmental Science</button>
+              </mat-menu> 
 
 
         </mat-toolbar>
