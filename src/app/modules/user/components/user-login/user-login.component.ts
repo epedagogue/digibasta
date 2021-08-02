@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./user-login.component.scss']
 })
 export class UserLoginComponent implements OnInit {
-  signinForm:FormGroup;
+  signinForm: FormGroup;
+  hide = true;
 
   constructor(private fb: FormBuilder, private router: Router) { }
 

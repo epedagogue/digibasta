@@ -21,6 +21,8 @@ import { TeacherDetailsComponent } from './components/teacher-details/teacher-de
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HomeComponent } from './components/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -46,8 +48,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     CommonModule,
     UserRoutingModule,
     SharedModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class UserModule { }
