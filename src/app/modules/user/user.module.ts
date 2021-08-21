@@ -22,6 +22,12 @@ import { TeacherDetailsComponent } from './components/teacher-details/teacher-de
 import { HomeComponent } from './components/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MyLearningComponent } from './components/my-learning/my-learning.component';
+import { verificationComponent } from './components/verification-mail/verification_mail.component';
+import { VerficationOtpComponent } from './components/verfication-otp/verfication-otp.component';
+import { SetpasswordComponent } from './components/setpassword/setpassword.component';
+
+import { ModalModule } from 'ngx-bootstrap/modal';  
+
 
 @NgModule({
   declarations: [
@@ -42,13 +48,18 @@ import { MyLearningComponent } from './components/my-learning/my-learning.compon
     TeacherDetailsComponent,
     HomeComponent,
     MyLearningComponent,
+    verificationComponent,
+    VerficationOtpComponent,
+    SetpasswordComponent,
   ],
 
   imports: [
     CommonModule,
     UserRoutingModule,
     SharedModule,
-    CarouselModule
+    CarouselModule,
+    ModalModule
+    
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

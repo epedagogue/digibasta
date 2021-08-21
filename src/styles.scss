@@ -2777,7 +2777,7 @@ html[xmlns] .flexslider .slides {
 a.box_feat {
   text-align: center;
   background: #fff;
-  padding: 40px 30px 30px 30px;
+  padding: 5px 27px 10px 20px;
   display: block;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -5742,7 +5742,7 @@ ul.bullets li:before {
 }
 
 .margin_120_95 {
-  padding-top: 120px;
+  
   padding-bottom: 95px;
 }
 @media (max-width: 991px) {
@@ -6984,7 +6984,11 @@ height: 300px; }
       color: #7d7e7f; }
       .course-post .course-content-bottom .course-students i {
         margin-right: 8px;
-        float: left; }
+        float: left;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+       }
       .course-post .course-content-bottom .course-students span {
         font-size: 15px; }
     .course-post .course-content-bottom .course-price {

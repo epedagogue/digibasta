@@ -458,9 +458,9 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 0 10px 30px;
+       padding: 10px 15px 14px 27px;
       font-family: "Roboto", sans-serif;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 600;
       color: #111;
       white-space: nowrap;
@@ -645,4 +645,21 @@ header {
     }
     .example-spacer {
       flex: 1 1 auto;
+    }
+    .cart_icon{
+      position: relative;
+      cursor: pointer;
+    }
+    .cart_icon :focus{
+      outline: none;
+      border: none;
+    }
+    .cart_value{
+      position: absolute;
+      top: -15px;
+      right: 9px;
+      border-radius: 50%;
+      font-size: 18px;
+      color:darkorange;
+
     }

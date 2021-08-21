@@ -184,7 +184,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr *ngFor ="let cart of getCartDetails">
                                     <td class="product-remove">
                                         <a href="#" class="remove">×</a>
                                     </td>
@@ -192,36 +192,20 @@
                                         <a href="#"><img src="../../../../../assets/thumb1.jpg" alt=""></a>
                                     </td>
                                     <td class="product-name">
-                                        <a href="#">Introduction Web Design with HTML</a>
+                                        <a href="#">{{cart.courseName}}</a>
                                     </td>
                                     <td class="product-price">
-                                        $244.00
+                                        &#x20B9;{{cart.price}}
                                     </td>
                                     <td class="product-quantity">
-                                        <input type="number" value="1"/>
+                                        <button type="number"  (click) = "increaseQuality(cart)">+</button>
+										<span>{{cart.Quality}}</span>
+										<button type="number"  (click) = "decreaseQuality(cart)">-</button>
                                     </td>
-                                    <td class="product-subtotal">$244.00</td>
+									
+                                    <td class="product-subtotal">&#x20B9;{{cart.price * cart.Quality | number}}</td>
                                 </tr>
-                                <tr>
-                                    <td class="product-remove">
-                                        <a href="#" class="remove">×</a>
-                                    </td>
-                                    <td class="product-thumbnail">
-                                        <a href="#"><img src="../../../../../assets/thumb2.jpg" alt=""></a>
-                                    </td>
-                                    <td class="product-name">
-                                        <a href="#">Distance Learning MBA Management</a>
-                                    </td>
-                                    <td class="product-price">
-                                        $29.99
-                                    </td>
-                                    <td class="product-quantity">
-                                        <input type="number" value="1"/>
-                                    </td>
-                                    <td class="product-subtotal">
-                                        $29.99
-                                    </td>
-                                </tr>
+                               
                                 <tr class="coupon-line"> 
                                     <td colspan="6" class="actions">
                                         <input type="text" name="coupon_code" placeholder="Coupon code">
@@ -240,11 +224,11 @@
                                 <tbody>
                                     <tr class="cart-subtotal">
                                         <th>Subtotal</th>
-                                        <td>273.99</td>
+                                        <td>&#x20B9;{{total}}</td>
                                     </tr>
                                     <tr class="order-total">
                                         <th>Total</th>
-                                        <td>273.99</td>
+                                        <td>&#x20B9;{{total}}</td>
                                     </tr>
                                 </tbody>
                             </table>

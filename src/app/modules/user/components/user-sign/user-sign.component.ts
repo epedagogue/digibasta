@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
+import {MatDialog} from '@angular/material/dialog';
+import { verificationComponent } from '../verification-mail/verification_mail.component';
 
 @Component({
   selector: 'app-user-sign',
@@ -9,15 +11,29 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 })
 export class UserSignComponent implements OnInit {
   signupForm: FormGroup;
-  constructor(private fb: FormBuilder, private router: Router) { }
+  constructor(private fb: FormBuilder, private router: Router, public dialog: MatDialog) { }
+  openDialog() {
+    this.dialog.open(verificationComponent);
+  }
 
   ngOnInit(): void {
     this.signupForm = this.fb.group({
       name: new FormControl(''),
       email: new FormControl(''),
       mobile: new FormControl(''),
-      password: new FormControl('')
     })
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+      container.classList.remove("right-panel-active");
+    });
+    
   }
 
   onSubmit() { }
