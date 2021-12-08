@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "digibasta"
+  "defaultProject": "digibasta",
+  "cli": {
+    "analytics": "44955457-d23c-49cf-8972-a847a94f9395"
+  }
 }
